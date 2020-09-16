@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
-    <script src="js/variables.js"></script>
+    <title>operaciones aritmeticas</title>
+    <!--<script src="js/variables.js"></script>-->
+    <script src="js/operArit.js"></script>
 </head>
 <body>
+    <h1>Formulario operaciones aritmeticas</h1>
+    <form>
+        <label form="nUno">Numero uno</label>
+        <input type="text" name="nUno" id="nUno">
+        <br><br>
+        <label form="nDos">Numero Dos</label>
+        <input type="text" name="nDos" id="nDos">
+        <br><br>
+        <button type="button" onclick="sumar()">Calcular</button>
+        <br><br>
+        <button type="button" onclick="multiplicar()">multiplicar</button>
+        <p>Resultado: 
+            <textarea id="resulOperacion" cols="5" rows="1"></textarea>
+        </p>
+    </form>
+    <hr>
+ <h1>Formulario de areas de formas geometricas</h1>
+ <form>
+     <h1>Area de triaungulo </h1>
+    <label form="base">base</label>
+    <input type="text" name="base" id="base">
+    <br><br>
+    <label form="base">altura<label>
+    <input type="text" name="altura" id="altura">
+    <br><br>    
+    <button type="button" onclick="areatriaungulo()">area del triaungulo</button>
+    <br><br>
+    <p>Resultado: 
+        <textarea name= "resulAreaTriangulo" id="resulAreaTriaungulo" cols="5" rows="1"></textarea>
+    </p>
+    <h1>Area de circulo</h1>
+    <label form="base">radio</label>
+    <input type="text" name="radio" id="radio">
+    <br><br>  
+    <button type="button" onclick="areacirculo()">area del circulo</button>
+    <p>Resultado: 
+        <textarea name= "resulAreaCirculo" id="resulAreaCirculo" cols="5" rows="1"></textarea>
+    </p>
+    
+</form>
+<hr>
 
 </body>
 </html>
