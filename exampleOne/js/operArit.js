@@ -1,43 +1,44 @@
 function sumar()
 {
     // recibir los datos 
-    let numeroU = parseInt(document.getElementById("nUno").value)
-    let numeroD = parseInt(document.getElementById("nDos").Value)
+    let numeroU = parseInt(document.getElementById("nUno").value);
+    let numeroD = parseInt(document.getElementById("nDos").Value);
     // procesar los datos 
     let resultado = parseInt(numeroU + numeroD)
     // entregar los resultados 
-    document.getElementById("resulOperacion").innerHTML = resultado
+    document.getElementById("resulOperacion").innerHTML = resultado;
 }
 
 function multiplicar()
 {
     // recibir los datos 
-    let numeroU = parseInt(document.getElementById("nUno").value)
-    let numeroD = parseInt(document.getElementById("nDos").Value)
+    let numeroU = parseInt(document.getElementById("nUno").value);
+    let numeroD = parseInt(document.getElementById("nDos").Value);
     // procesar los datos 
-    let resultado = parseInt(numeroU * numeroD)
+   let resultado = parseInt(numeroU * numeroD)
     // entregar los resultados 
-   document.getElementById("resulOperacion").innerHTML = resultado
+   document.getElementById("resulOperacion").innerHTML = resultado;
 }
-function areatriangulo() 
+function AreaTriangulo() 
 {
 //Calcular Area Triangulo
-    let altura = parseInt(document.getElementById("altura").value)
-    let base = parseInt(document.getElementById("base").value)
+    let base = parseInt(document.getElementById("base").value);
+    let altura = parseInt(document.getElementById("altura").value);
+    let Resultado;
 
-    let resultado = parseInt(altura + base); 
-   document.getElementById("resulOperacion").innerHTML = resultado
+    Resultado = parseInt(base + altura)/2;
+    document.getElementById("resulAreaTriangulo").innerHTML = Resultado;
 
 }
-function areacirculo()
+function AreaCriculo()
 {
 //calcular area circulo
 
-    let ancho = parseInt(document.getElementById("ancho").value)
-    let diametro = parseInt(document.getElementById("diametro").value)
+    let radio = parseInt(document.getElementById("radio").value);
+    let Resultado;
 
-    let resultado = parseInt(anchura * diametro); 
-   document.getElementById("resulOperacion").innerHTML = resultado
+    Resultado = parseInt(Math.PI * radio * radio); 
+   document.getElementById("resulAreaCirculo").innerHTML = Resultado;
 
 }
    
