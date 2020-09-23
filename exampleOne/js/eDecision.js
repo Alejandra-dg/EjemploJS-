@@ -133,7 +133,7 @@ let prenderApagar = interruptor => {
 
     let mensaje = (interruptor == 0) ? "OF" : "ON"
 
-    alert(mensaje)
+    alert(interruptor)
     
 }
 
